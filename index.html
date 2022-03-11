@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/about.css" />
     <title>Bootstrap template</title>
   </head>
   <body>
+    <div class="container">
+      <img class="img-fluid" src="./images/pokemon_logo.png" alt="Logo" />
+      <ul class="row list-inline mx-auto mt-5" id="pokemon_list">
+        <li class="pokemon_item col-3 mb-3 mx-4">
+          <div class="card wrapper" style="width: 30rem">
+            <img
+              src="https://picsum.photos/200/200"
+              class="card-img-top"
+              alt="card-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title text-center">Bulbasur</h3>
+              <p class="card-text text-center">Grass,posion</p>
+              <p class="card-text text-center">6.9kg</p>
+              <p class="card-text text-center">0.71m</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/pokemon.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@ var elList = document.querySelector("#pokemon_list");
 var newPokemon = pokemons;
 function renderPokemon(array, place) {
   elList.innerHTML = null;
-  for (var item of newPokemon) {
+  for (var item of array) {
     // Creating Li element
     var newLi = document.createElement("li");
     newLi.classList.add("col-3", "mb-3");
@@ -42,7 +42,7 @@ function renderPokemon(array, place) {
     newDiv.appendChild(newImg);
     newDiv.appendChild(newInnerDiv);
     newLi.appendChild(newDiv);
-    elList.appendChild(newLi);
+    place.appendChild(newLi);
   }
 }
-renderPokemon(pokemons);
+renderPokemon(newPokemon, elList);
